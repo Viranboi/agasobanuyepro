@@ -1,0 +1,8 @@
+[build]
+  functions = "functions"  # Specify the folder where your serverless functions are located.
+  publish = "public"      # The folder where your static files are located, like index.html.
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/hello-world"
+  status = 200
